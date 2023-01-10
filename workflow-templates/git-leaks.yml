@@ -14,7 +14,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Get config
-        run: wget https://raw.githubusercontent.com/kulaxa/gitleaks/master/config/gitleaks.toml
+        run: wget https://raw.githubusercontent.com/mindsmiths/Secrets-Detection/main/gitleaks.toml  
       - uses: gitleaks/gitleaks-action@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
